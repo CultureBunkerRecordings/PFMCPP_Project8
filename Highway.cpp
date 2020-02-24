@@ -2,6 +2,11 @@
 
 #include <cassert>
 
+#include "Vehicle.h"
+#include "Car.h"
+#include "Motorcycle.h"
+#include "SemiTruck.h"
+
 void Highway::changeSpeed(int newSpeed)
 {
     speedLimit = newSpeed;

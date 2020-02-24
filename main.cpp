@@ -44,6 +44,11 @@ your task:
 #include <vector>
 #include <algorithm>
 #include <cassert>
+#include "Highway.h"
+#include "Car.h"
+#include "Motorcycle.h"
+#include "HighwayPatrol.h"
+#include "SemiTruck.h"
 
 int main()
 {
@@ -53,12 +58,13 @@ int main()
     { 
         Car("janice"),
     };
+    
     std::vector<Motorcycle> motorcycles
     { 
 
     };
 
-    std::vector<SemiTruck> trucks
+    std::vector<SemiTruck> trucks  
     {
 
     };

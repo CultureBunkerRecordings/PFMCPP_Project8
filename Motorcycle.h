@@ -1,5 +1,5 @@
 #pragma once
-
+#include "Vehicle.h"
 #include <iostream>
 #include <limits>
 
@@ -12,4 +12,4 @@ struct Motorcycle : public Vehicle
     void tryToEvade() override;
 
     void setSpeed(int s) override;
-};
+}; 
