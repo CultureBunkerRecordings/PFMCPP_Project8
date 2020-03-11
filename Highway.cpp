@@ -18,22 +18,47 @@ void Highway::changeSpeed(int newSpeed)
 
 void Highway::addVehicleInternal(Vehicle* v)
 {
-    assert(false);
+    //assert(false);
 
     /*
     depending on the derived type, call the member function that doesn't evade the cops. 
     */
+    if(auto* vehicle = dynamic_cast<Car*>(v))
+    {
+        vehicle->closeWindows();
+    }
+    if (auto* vehicle = dynamic_cast<Motorcycle*>(v))
+    {
+        vehicle->setSpeed(60);
+    }
+    if (auto* vehicle = dynamic_cast<SemiTruck*>(v))
+    {
+        vehicle->setSpeed(30);
+    }
 }
 
 void Highway::removeVehicleInternal(Vehicle* v)
 {
-    assert(false);
+    //assert(false);
 
     /*
     depending on the derived type, call the member function that tries to evade the cops. 
 
     trucks pull over, but cars and bikes try to evade!!
     */
+
+    if (auto* vehicle = dynamic_cast<Car*>(v))
+    {
+        vehicle->tryToEvade();
+    }
+    if (auto* vehicle = dynamic_cast<Motorcycle*>(v))
+    {
+        vehicle->tryToEvade();
+    }
+    if (auto* vehicle = dynamic_cast<SemiTruck*>(v))
+    {
+        vehicle->pullOver();
+    }
 }
 
 void Highway::addVehicle(Vehicle* v)
