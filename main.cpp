@@ -116,10 +116,12 @@ int main()
      now reserve and emplace_back your Trucks and Motorcyles
      */
 
+    motorcycles.reserve(3);
     motorcycles.emplace_back("BSA");
     motorcycles.emplace_back("Suzuki");
     motorcycles.emplace_back("Chopper");
 
+    trucks.reserve(3);
     trucks.emplace_back("BigBoy");
     trucks.emplace_back("BadGirl");
     trucks.emplace_back("OleOily");

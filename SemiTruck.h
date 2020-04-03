@@ -4,8 +4,9 @@
 struct SemiTruck : public Vehicle
 {
     SemiTruck(const std::string s);
+    virtual ~SemiTruck();
     SemiTruck(const SemiTruck&) = default;
     SemiTruck& operator=(const SemiTruck&) = default;
 
-    void pullOver();
+    void stop();
 };
