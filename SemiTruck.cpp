@@ -12,7 +12,7 @@ SemiTruck::~SemiTruck()
 
 void SemiTruck::turnOnRadio()
 {
-    std::cout << name << "radio on.. obla dee obla da life goes on.." << std::endl;
+    std::cout << name << ": radio on.. obla dee obla da life goes on.." << std::endl;
 }
 
 void SemiTruck::stop()
