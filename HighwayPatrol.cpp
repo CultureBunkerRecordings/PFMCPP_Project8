@@ -9,10 +9,7 @@ HighwayPatrol::HighwayPatrol() : Vehicle("HighwayPatrol")
 
 }
 
-HighwayPatrol::~HighwayPatrol() FIXME make this '= default;'
-{
-    
-}
+HighwayPatrol::~HighwayPatrol() = default;
 
 void HighwayPatrol::scanHighway(Highway* h)
 {

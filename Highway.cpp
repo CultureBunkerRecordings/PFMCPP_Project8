@@ -57,7 +57,7 @@ void Highway::removeVehicleInternal(Vehicle* v)
     }
     else if (auto* truck = dynamic_cast<SemiTruck*>(v))
     {
-        truck->stop();
+        truck->pullOver();
     }
 }
 

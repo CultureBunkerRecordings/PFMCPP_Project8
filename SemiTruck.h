@@ -9,5 +9,5 @@ struct SemiTruck : public Vehicle
     SemiTruck& operator=(const SemiTruck&) = default;
 
     void turnOnRadio();
-    void stop();
+    void pullOver();
 };
