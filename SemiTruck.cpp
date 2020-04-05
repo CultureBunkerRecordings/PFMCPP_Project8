@@ -5,7 +5,7 @@ SemiTruck::SemiTruck(const std::string s): Vehicle(s)
     
 }
 
-SemiTruck::~SemiTruck()
+SemiTruck::~SemiTruck() FIXME make this '= default;'
 {
     
 }

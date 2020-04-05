@@ -9,7 +9,7 @@ HighwayPatrol::HighwayPatrol() : Vehicle("HighwayPatrol")
 
 }
 
-HighwayPatrol::~HighwayPatrol()
+HighwayPatrol::~HighwayPatrol() FIXME make this '= default;'
 {
     
 }
