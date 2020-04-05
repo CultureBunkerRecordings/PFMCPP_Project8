@@ -2,6 +2,7 @@
 #include <vector>
 #include <algorithm>
 
+struct HighwayPatrol;
 struct Vehicle;
 
 struct Highway
